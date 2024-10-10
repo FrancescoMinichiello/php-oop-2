@@ -2,8 +2,8 @@
 include_once __DIR__ . "/models/Category.php";
 include_once __DIR__ . "/models/Product.php";
 
-$cani = new Category("cani");
-$gatti = new Category("gatti");
+$cani = new Category("Cani");
+$gatti = new Category("Gatti");
 
 
 $products = [
@@ -20,16 +20,56 @@ $products = [
         29.99,
         "https://images.freeimages.com/vhq/images/previews/bdc/cat-icons-4-43748.png",
         "https://croci.net/cdn/shop/files/Cuccia_morbida_per_gatto_Bobby_Poilu.jpg?v=1709817054&width=850",
-        "Cuccia per gatto",
+        "Accessori per gatti",
         $gatti
     ),
     new Product(
-        "Cuccia per gatto",
-        29.99,
+        "Crocchette per cani",
+        9.99,
+        "https://cdn.icon-icons.com/icons2/2242/PNG/512/perro_icon_134885.png",
+        "https://www.pacopetshop.it/16048-home_default/naxos-wellness-valle-bruna-mini-adult-per-cani.jpg",
+        "Cibo per cani",
+        $cani
+    ),
+    new Product(
+        "Gioco per gatti",
+        11.99,
         "https://images.freeimages.com/vhq/images/previews/bdc/cat-icons-4-43748.png",
-        "https://croci.net/cdn/shop/files/Cuccia_morbida_per_gatto_Bobby_Poilu.jpg?v=1709817054&width=850",
-        "Cuccia per gatto",
+        "https://www.dmail.it/on/demandware.static/-/Sites-dret-catalog/default/dw719c0a68/images_dmail/large/509459l_1.jpg",
+        "Giochi per gatti",
         $gatti
+    ),
+    new Product(
+        "Cibo umido con fegato",
+        1.99,
+        "https://images.freeimages.com/vhq/images/previews/bdc/cat-icons-4-43748.png",
+        "https://www.naturepetshop.it/wp-content/uploads/leonardo-fegato-400-gr-lattine.jpg",
+        "Cibo per gatti",
+        $gatti
+    ),
+    new Product(
+        "Salmone e ribes",
+        3.99,
+        "https://images.freeimages.com/vhq/images/previews/bdc/cat-icons-4-43748.png",
+        "https://www.naturepetshop.it/wp-content/uploads/UMIDO_ADULT_SALMONE-RIBES_400g-300x300-1.jpg",
+        "Cibo per cani",
+        $cani
+    ),
+    new Product(
+        "Cuccia per cani",
+        22.99,
+        "https://images.freeimages.com/vhq/images/previews/bdc/cat-icons-4-43748.png",
+        "https://www.gardenbedettishop.com/16599-large_default/cuccia-per-cani-charles-50-ferplast.jpg",
+        "Accessori per cani",
+        $cani
+    ),
+    new Product(
+        "Peluche per cani",
+        4.99,
+        "https://images.freeimages.com/vhq/images/previews/bdc/cat-icons-4-43748.png",
+        "https://www.sleepypets.it/944-medium_default/gioco-per-cani-personalizzato.jpg",
+        "Giochi per cani",
+        $cani
     ),
 ];
 
@@ -53,12 +93,12 @@ $products = [
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <?php foreach ($products as $product) { ?>
-            <div class="col-4 d-flex justify-content-center">
-                <div class="card mt-5 text-center p-3" style="width: 18rem;">
-                    <img class="img-fluid icon-img" src="<?= $product->icon ?>" alt="Product image">
-                    <img class="card-img-top" src="<?= $product->image ?>" alt="Product image">
+            <div class="col-3">
+                <div class="card my-5 text-center p-3" style="width: 18rem;">
+                    <img class="img-fluid icon-img" src="<?= $product->icon ?>" alt="Icon image">
+                    <img class="card-img-top p-4 " src="<?= $product->image ?>" alt="Product image">
                     <div class="card-body bg-secondary rounded-2 text-white mb-2">
                         <h5 class="card-title"><?= $product->title ?></h5>
                         <p class="card-text">Categoria: <?= $product->category->getName() ?></p>
