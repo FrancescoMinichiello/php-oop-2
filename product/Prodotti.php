@@ -1,5 +1,7 @@
 <?php
 
+include_once __DIR__ . "/categorie.php";
+
 class Product
 {
     public $title;
@@ -8,13 +10,14 @@ class Product
     public $image;
     public $type;
 
-    public function __construct($title, $price, $icon, $image, $type)
+    public function __construct(string $title, float $price, string $icon, string $image, string $type, Category $category,)
     {
         $this->title = $title;
         $this->price = $price;
         $this->icon = $icon;
         $this->image = $image;
         $this->type = $type;
+        $this->category = $category
     }
     public function getTitle()
     {
@@ -34,5 +37,10 @@ class Product
     public function getType()
     {
         return $this->type;
+    }
+
+    public function getCategory()
+    {
+        return $this->category->getName();
     }
 }
