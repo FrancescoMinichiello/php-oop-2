@@ -58,13 +58,14 @@ $products = [
                 <div class="card mt-5 text-center p-3" style="width: 18rem;">
                     <img class="img-fluid icon-img" src="<?= $product->icon ?>" alt="Product image">
                     <img class="card-img-top" src="<?= $product->image ?>" alt="Product image">
-                    <div class="card-body">
+                    <div class="card-body bg-secondary rounded-2 text-white mb-2">
                         <h5 class="card-title"><?= $product->title ?></h5>
                         <p class="card-text">Categoria: <?= $product->category->name ?></p>
-                        <p class="card-text">Prezzo: <?= $product->price ?>€</p>
+                        <p class="card-text fw-bold">Prezzo: <?= $product->price ?>€</p>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><?= $product->type ?></li>
+                    <ul class="list-group list-group-flush pt-2">
+                        <li class="list-group-item bg-success rounded-2 fw-semibold text-white"><?= $product->type ?>
+                        </li>
                     </ul>
                 </div>
             </div>
