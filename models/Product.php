@@ -1,6 +1,6 @@
 <?php
 
-include_once __DIR__ . "/categorie.php";
+include_once __DIR__ . "/Category.php";
 
 class Product
 {
@@ -9,6 +9,7 @@ class Product
     public $icon;
     public $image;
     public $type;
+    public $category;
 
     public function __construct(string $title, float $price, string $icon, string $image, string $type, Category $category,)
     {
@@ -17,7 +18,7 @@ class Product
         $this->icon = $icon;
         $this->image = $image;
         $this->type = $type;
-        $this->category = $category
+        $this->category = $category;
     }
     public function getTitle()
     {
