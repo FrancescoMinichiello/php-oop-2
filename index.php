@@ -1,6 +1,7 @@
 <?php
 include_once __DIR__ . "/models/Category.php";
 include_once __DIR__ . "/models/Product.php";
+
 $cani = new Category("cani");
 $gatti = new Category("gatti");
 
@@ -60,7 +61,7 @@ $products = [
                     <img class="card-img-top" src="<?= $product->image ?>" alt="Product image">
                     <div class="card-body bg-secondary rounded-2 text-white mb-2">
                         <h5 class="card-title"><?= $product->title ?></h5>
-                        <p class="card-text">Categoria: <?= $product->category->name ?></p>
+                        <p class="card-text">Categoria: <?= $product->category->getName() ?></p>
                         <p class="card-text fw-bold">Prezzo: <?= $product->price ?>€</p>
                     </div>
                     <ul class="list-group list-group-flush pt-2">
