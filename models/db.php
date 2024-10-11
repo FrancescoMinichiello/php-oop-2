@@ -19,13 +19,15 @@ $products = [
         "https://croci.net/cdn/shop/files/Cuccia_morbida_per_gatto_Bobby_Poilu.jpg?v=1709817054&width=850",
         "Accessori per gatti",
         $gatti,
+        "Una cuccia per gatti comodissima!"
     ),
     new Product(
         "Crocchette per cani",
         9.99,
         "https://www.pacopetshop.it/16048-home_default/naxos-wellness-valle-bruna-mini-adult-per-cani.jpg",
         "Cibo per cani",
-        $cani
+        $cani,
+        "Il miglior cibo che il tuo cane abbia mai mangiato"
     ),
     new Product(
         "Gioco per gatti",
@@ -48,7 +50,8 @@ $products = [
         3.99,
         "https://www.naturepetshop.it/wp-content/uploads/UMIDO_ADULT_SALMONE-RIBES_400g-300x300-1.jpg",
         "Cibo per cani",
-        $cani
+        $cani,
+        "Il miglior cibo che il tuo cane abbia mai mangiato!"
     ),
     new Product(
         "Cuccia per cani",
@@ -63,6 +66,7 @@ $products = [
         4.99,
         "https://www.sleepypets.it/944-medium_default/gioco-per-cani-personalizzato.jpg",
         "Giochi per cani",
-        $cani
+        $cani,
+        "Fai divertire il tuo animale domestico"
     ),
 ];

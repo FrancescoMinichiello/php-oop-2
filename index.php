@@ -32,7 +32,7 @@ include_once __DIR__ . "/models/Description.php";
 
 <body>
     <div class="container">
-        <div class="row ">
+        <div class="row">
             <?php foreach ($products as $product) { ?>
             <div class="col-3 d-flex flex-wrap">
                 <div class="card my-5 text-center p-3" style="width: 18rem;">
