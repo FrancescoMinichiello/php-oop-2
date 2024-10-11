@@ -1,8 +1,8 @@
 <?php
 include_once __DIR__ . "/Category.php";
 include_once __DIR__ . "/Product.php";
-$cani = new Category("Cani", "https://images.freeimages.com/vhq/images/previews/bdc/cat-icons-4-43748.png");
-$gatti = new Category("Gatti", "https://cdn.icon-icons.com/icons2/2242/PNG/512/perro_icon_134885.png");
+$cani = new Category("Cani", "https://cdn.icon-icons.com/icons2/2242/PNG/512/perro_icon_134885.png");
+$gatti = new Category("Gatti", "https://images.freeimages.com/vhq/images/previews/bdc/cat-icons-4-43748.png");
 
 $products = [
     new Product(
