@@ -1,5 +1,6 @@
 <?php
 include_once __DIR__ . "/models/db.php";
+include_once __DIR__ . "/models/Description.php";
 ?>
 
 
@@ -22,7 +23,7 @@ include_once __DIR__ . "/models/db.php";
     <div class="container-fluid">
         <div class="row">
             <div class="col text-white fw-semibold">
-                Ciao
+
             </div>
         </div>
     </div>
@@ -41,6 +42,7 @@ include_once __DIR__ . "/models/db.php";
                         <h5 class="card-title"><?= $product->title ?></h5>
                         <p class="card-text">Categoria: <?= $product->category->getName() ?></p>
                         <p class="card-text fw-bold">Prezzo: <?= $product->price ?>€</p>
+                        <p class="card-text">Descrizione: <?= $product->getShortDescription(30) ?></p>
                     </div>
                     <ul class="list-group list-group-flush pt-2">
                         <li class="list-group-item bg-success rounded-2 fw-semibold text-white"><?= $product->type ?>

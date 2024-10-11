@@ -10,14 +10,15 @@ $products = [
         3.99,
         "https://www.lelepetshop.it/images/thumbs/0002949_gioco-cane-palla-tennis-gigante-maxi-15-cm-diametro_550.png",
         "Giochi per cani",
-        $cani
+        $cani,
+        "Cibo per cani di alta qualità, ricco di proteine."
     ),
     new Product(
         "Cuccia per gatto",
         29.99,
         "https://croci.net/cdn/shop/files/Cuccia_morbida_per_gatto_Bobby_Poilu.jpg?v=1709817054&width=850",
         "Accessori per gatti",
-        $gatti
+        $gatti,
     ),
     new Product(
         "Crocchette per cani",
@@ -31,14 +32,16 @@ $products = [
         11.99,
         "https://www.dmail.it/on/demandware.static/-/Sites-dret-catalog/default/dw719c0a68/images_dmail/large/509459l_1.jpg",
         "Giochi per gatti",
-        $gatti
+        $gatti,
+        "Gioco divertente per gatti, ideale per mantenere attivo il tuo amico felino."
     ),
     new Product(
         "Cibo umido con fegato",
         1.99,
         "https://www.naturepetshop.it/wp-content/uploads/leonardo-fegato-400-gr-lattine.jpg",
         "Cibo per gatti",
-        $gatti
+        $gatti,
+        "Cibo per gatti con ingredienti naturali e senza conservanti."
     ),
     new Product(
         "Salmone e ribes",
@@ -52,7 +55,8 @@ $products = [
         22.99,
         "https://www.gardenbedettishop.com/16599-large_default/cuccia-per-cani-charles-50-ferplast.jpg",
         "Accessori per cani",
-        $cani
+        $cani,
+        "Comoda cuccia per cani, ideale per ogni taglia."
     ),
     new Product(
         "Peluche per cani",

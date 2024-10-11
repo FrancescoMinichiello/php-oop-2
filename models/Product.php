@@ -1,22 +1,27 @@
 <?php
-
 include_once __DIR__ . "/Category.php";
+include_once __DIR__ . "/Description.php";
 
 class Product
 {
+
+    use Description;
+
+
     public string $title;
     public float $price;
     public string $image;
     public string $type;
     public $category;
 
-    public function __construct(string $title, float $price, string $image, string $type, Category $category,)
+    public function __construct(string $title, float $price, string $image, string $type, Category $category, string $desc = "")
     {
         $this->title = $title;
         $this->price = $price;
         $this->image = $image;
         $this->type = $type;
         $this->category = $category;
+        $this->setDescription($desc);
     }
 
     public function getTitle(): string
