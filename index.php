@@ -34,15 +34,15 @@ include_once __DIR__ . "/models/Description.php";
     <div class="container">
         <div class="row ">
             <?php foreach ($products as $product) { ?>
-            <div class="col-3">
+            <div class="col-3 d-flex flex-wrap">
                 <div class="card my-5 text-center p-3" style="width: 18rem;">
                     <img class="img-fluid icon-img" src="<?= $product->category->getIcon() ?>" alt="Icon image">
-                    <img class="card-img-top p-4 " src="<?= $product->image ?>" alt="Product image">
+                    <img class="card-img-top product-image p-4 " src="<?= $product->image ?>" alt="Product image">
                     <div class="card-body bg-secondary rounded-2 text-white mb-2">
                         <h5 class="card-title"><?= $product->title ?></h5>
                         <p class="card-text">Categoria: <?= $product->category->getName() ?></p>
                         <p class="card-text fw-bold">Prezzo: <?= $product->price ?>€</p>
-                        <p class="card-text">Descrizione: <?= $product->getShortDescription(30) ?></p>
+                        <p class="card-text desc">Descrizione: <?= $product->getShortDescription(50) ?></p>
                     </div>
                     <ul class="list-group list-group-flush pt-2">
                         <li class="list-group-item bg-success rounded-2 fw-semibold text-white"><?= $product->type ?>
