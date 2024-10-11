@@ -6,16 +6,14 @@ class Product
 {
     public string $title;
     public float $price;
-    public string $icon;
     public string $image;
     public string $type;
     public $category;
 
-    public function __construct(string $title, float $price, string $icon, string $image, string $type, Category $category,)
+    public function __construct(string $title, float $price, string $image, string $type, Category $category,)
     {
         $this->title = $title;
         $this->price = $price;
-        $this->icon = $icon;
         $this->image = $image;
         $this->type = $type;
         $this->category = $category;
@@ -39,16 +37,6 @@ class Product
     public function setPrice(float $price): void
     {
         $this->price = $price;
-    }
-
-    public function getIcon(): string
-    {
-        return $this->icon;
-    }
-
-    public function setIcon(string $icon): void
-    {
-        $this->icon = $icon;
     }
 
     public function getImage(): string

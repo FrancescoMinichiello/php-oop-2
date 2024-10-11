@@ -18,13 +18,24 @@ include_once __DIR__ . "/models/db.php";
     <link rel="stylesheet" href="style.css">
 </head>
 
+<header class="py-4 bg-primary">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-white fw-semibold">
+                Ciao
+            </div>
+        </div>
+    </div>
+
+</header>
+
 <body>
     <div class="container">
         <div class="row ">
             <?php foreach ($products as $product) { ?>
             <div class="col-3">
                 <div class="card my-5 text-center p-3" style="width: 18rem;">
-                    <img class="img-fluid icon-img" src="<?= $product->icon ?>" alt="Icon image">
+                    <img class="img-fluid icon-img" src="<?= $product->category->getIcon() ?>" alt="Icon image">
                     <img class="card-img-top p-4 " src="<?= $product->image ?>" alt="Product image">
                     <div class="card-body bg-secondary rounded-2 text-white mb-2">
                         <h5 class="card-title"><?= $product->title ?></h5>
