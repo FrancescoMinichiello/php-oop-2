@@ -1,11 +1,5 @@
 <?php
-include_once __DIR__ . "/models/Category.php";
-include_once __DIR__ . "/models/Product.php";
 include_once __DIR__ . "/models/db.php";
-
-$cani = new Category("Cani");
-$gatti = new Category("Gatti");
-
 ?>
 
 
